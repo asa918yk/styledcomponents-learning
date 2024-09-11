@@ -1,7 +1,7 @@
 import styled from "styled-components";
 const Button = styled.button`
     width: 150px;
-    background-color: gray;
+    background-color: ${props => (props.primary ? 'red' : 'gray')};
     color: white;
     border: none;
     border-radius: 25px;
@@ -12,9 +12,9 @@ const Button = styled.button`
         opacity: 0.5;
     }
 `;
-export function MyButton({children}) {
+export function MyButton({children, primary}) {
     return(
-        <Button>
+        <Button primary={primary}>
             {children}
         </Button>
     )
