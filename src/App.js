@@ -1,25 +1,60 @@
+import styled from "styled-components";
 import { MyButton } from "./MyButton";
+import MyCard from "./MyCard";
+const Container = styled.div`
+  padding: 10px;
+`;
 function App() {
   return (
     <div className="App">
-      <div>
+      <Container>
         <MyButton>ボタン</MyButton>
-      </div>
-      <div>
+      </Container>
+      <Container>
         <MyButton primary>primaryボタン</MyButton>
-      </div>
-      <div>
+      </Container>
+      <Container>
         <MyButton size={'l'}>ボタン大</MyButton>
-      </div>
-      <div>
+      </Container>
+      <Container>
         <MyButton size={'m'}>ボタン中</MyButton>
-      </div>
-      <div>
+      </Container>
+      <Container>
         <MyButton size={'s'}>ボタン小</MyButton>
-      </div>
-      <div>
+      </Container>
+      <Container>
         <MyButton disabled>クリック不可</MyButton>
-      </div>
+      </Container>
+      <Container>
+        <MyCard>
+          <h2>タイトル</h2>
+          <p>テキストが入ります。</p>
+        </MyCard>
+      </Container>
+      <Container>
+        <MyCard primary>
+          <h2>primaryカードです</h2>
+          <p>テキストが入ります。</p>
+        </MyCard>
+      </Container>
+      <Container>
+        <MyCard size='s'>
+          <h2>サイズ：小のカード</h2>
+          <p>テキストが入ります。</p>
+        </MyCard>
+      </Container>
+      <Container>
+        <MyCard size='m'>
+          <h2>サイズ：中のカード</h2>
+          <p>テキストが入ります。</p>
+        </MyCard>
+      </Container>
+      <Container>
+        <MyCard size='l'>
+          <h2>サイズ：大のカード</h2>
+          <p>テキストが入ります。</p>
+        </MyCard>
+      </Container>
     </div>
   );
 }
