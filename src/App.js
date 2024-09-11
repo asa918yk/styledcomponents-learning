@@ -8,7 +8,15 @@ function App() {
       <div>
         <MyButton primary>primaryボタン</MyButton>
       </div>
-      
+      <div>
+        <MyButton size={'l'}>ボタン大</MyButton>
+      </div>
+      <div>
+        <MyButton size={'m'}>ボタン中</MyButton>
+      </div>
+      <div>
+        <MyButton size={'s'}>ボタン小</MyButton>
+      </div>
     </div>
   );
 }
