@@ -17,6 +17,9 @@ function App() {
       <div>
         <MyButton size={'s'}>ボタン小</MyButton>
       </div>
+      <div>
+        <MyButton disabled>クリック不可</MyButton>
+      </div>
     </div>
   );
 }
